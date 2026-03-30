@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aanya Studio — Makeup Artist & Beauty Specialist</title>
+    <meta name="description"
+        content="Bridal, party, hair and skincare services by Aanya — luxury beauty specialist based in Haryana." />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--
+    FOLDER STRUCTURE SUGGESTION:
+    /
+    ├── index.html
+    ├── style.css
+    └── images/
+        ├── hero-main.jpg          ← hero background (portrait/full look)
+        ├── portrait.jpg           ← about section headshot
+        ├── portfolio-featured.jpg ← large featured portfolio image
+        ├── portfolio-1.jpg        ← bridal look
+        ├── portfolio-2.jpg        ← party glam
+        ├── portfolio-3.jpg        ← hair styling
+        ├── portfolio-4.jpg        ← sangeet / reception look
+        └── logo.png               ← (optional) if you have a logo file
+  -->
+</head>
+
+<body>
+
+    <!-- ══════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════ -->
+    <nav>
+        <div class="nav-logo">Aanya Studio</div>
+        <!--
+      OPTIONAL LOGO IMAGE:
+      Replace the text above with the line below if you have a logo file.
+      <img src="images/logo.png" alt="Aanya Studio" style="height:36px; width:auto; object-fit:contain;" />
+    -->
+
+        <ul class="nav-links">
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="nav-book" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Book Now
+        </button>
+    </nav>
+
+
+    <!-- ══════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════ -->
+    <section class="hero">
+
+        <div class="hero-left">
+            <p class="eyebrow fade-up fade-up-1">Makeup Artist &amp; Beauty Specialist</p>
+            <h1 class="hero-name fade-up fade-up-2">
+                Where beauty<br><em>meets</em> artistry.
+            </h1>
+            <p class="hero-tagline fade-up fade-up-3">
+                Bridal, editorial, and everyday luxury makeup — crafted
+                to make you feel effortlessly, authentically yourself.
+            </p>
+            <div class="hero-cta fade-up fade-up-4">
+                <button class="btn-primary"
+                    onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">
+                    View Portfolio
+                </button>
+                <button class="btn-ghost"
+                    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                    Book a Session →
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <!--
+        HERO MAIN IMAGE:
+        Best: a close-up or editorial portrait showing her work.
+        Dimensions: tall portrait — at least 900×1200px recommended.
+        Replace src below with your image path.
+      -->
+            <img src="images/hero-main.jpg" alt="Aanya Studio — Bridal Makeup" />
+
+            <div class="hero-instagram-tag">Instagram @aanyastudio</div>
+            <!--
+        Update the Instagram handle above to your friend's actual handle.
+      -->
+        </div>
+
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+       STATS BAR
+  ══════════════════════════════════════════════ -->
+    <div class="stats-bar">
+        <div class="stat-item">
+            <div class="stat-num">500+</div>
+            <div class="stat-label">Brides Beautified</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">8</div>
+            <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">200+</div>
+            <div class="stat-label">Five-Star Reviews</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">12</div>
+            <div class="stat-label">Certifications</div>
+        </div>
+        <!--
+      Update numbers above once you have your friend's actual stats.
+    -->
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════════════ -->
+    <section class="services-section" id="services">
+        <div class="section-header">
+            <p class="eyebrow">What I offer</p>
+            <h2 class="section-title">Services &amp; <em>Specialties</em></h2>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-icon-wrap">💍</div>
+                <h3 class="service-name">Bridal Makeup</h3>
+                <p class="service-desc">
+                    Full bridal packages including pre-wedding trials, day-of glam,
+                    and touch-up kits. Designed for every skin tone and ceremony type.
+                </p>
+                <div class="service-price">From ₹8,000</div>
+                <!--
+          SERVICE CARD IMAGE (optional):
+          You can add a small square photo below the price in each card.
+          Uncomment and update the src if you want this:
+
+          <img src="images/service-bridal.jpg" alt="Bridal Makeup"
+               style="margin-top:1.25rem; height:160px; width:100%; object-fit:cover;" />
+        -->
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon-wrap">✨</div>
+                <h3 class="service-name">Party &amp; Events</h3>
+                <p class="service-desc">
+                    Cocktail evenings, sangeets, receptions — makeup that photographs
+                    beautifully under every lighting and lasts through the night.
+                </p>
+                <div class="service-price">From ₹3,500</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon-wrap">🌿</div>
+                <h3 class="service-name">Hair Styling</h3>
+                <p class="service-desc">
+                    Updos, braids, blow-outs, and traditional styles. Available as
+                    a standalone service or as part of a complete glam package.
+                </p>
+                <div class="service-price">From ₹2,500</div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon-wrap">🌸</div>
+                <h3 class="service-name">Skincare &amp; Facials</h3>
+                <p class="service-desc">
+                    Pre-event facials, clean-ups, and skin-prep sessions to ensure
+                    your base is flawless before any makeup application.
+                </p>
+                <div class="service-price">From ₹1,500</div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+       PORTFOLIO
+  ══════════════════════════════════════════════ -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="section-header">
+            <p class="eyebrow">Recent work</p>
+            <h2 class="section-title">The <em>Portfolio</em></h2>
+        </div>
+
+        <div class="portfolio-grid">
+
+            <!--
+        PORTFOLIO IMAGE 1 — FEATURED (spans 2 columns, landscape)
+        Best: a wide, stunning bridal or editorial shot.
+        Recommended size: 1400×800px or wider landscape ratio.
+      -->
+            <div class="portfolio-item featured">
+                <img src="images/portfolio-featured.jpg" alt="Featured bridal makeup look" />
+                <div class="portfolio-overlay">
+                    <span class="portfolio-label">Bridal · Featured</span>
+                </div>
+            </div>
+
+            <!--
+        PORTFOLIO IMAGE 2 — Regular (portrait ratio)
+        Best: a close-up of eyes / face detailing, or a party glam shot.
+        Recommended size: 600×750px portrait.
+      -->
+            <div class="portfolio-item regular">
+                <img src="images/portfolio-1.jpg" alt="Party glam makeup" />
+                <div class="portfolio-overlay">
+                    <span class="portfolio-label">Party Glam</span>
+                </div>
+            </div>
+
+            <!--
+        PORTFOLIO IMAGE 3 — Regular (portrait ratio)
+        Best: a hair styling shot — updo or elaborate braid.
+      -->
+            <div class="portfolio-item regular">
+                <img src="images/portfolio-2.jpg" alt="Hair styling" />
+                <div class="portfolio-overlay">
+                    <span class="portfolio-label">Hair Styling</span>
+                </div>
+            </div>
+
+            <!--
+        PORTFOLIO IMAGE 4 — Regular (portrait ratio)
+        Best: a skincare / natural glow look.
+      -->
+            <div class="portfolio-item regular">
+                <img src="images/portfolio-3.jpg" alt="Skincare and natural glow" />
+                <div class="portfolio-overlay">
+                    <span class="portfolio-label">Skincare Glow</span>
+                </div>
+            </div>
+
+            <!--
+        PORTFOLIO IMAGE 5 — Regular (portrait ratio)
+        Best: a sangeet or reception look — bold/colourful.
+      -->
+            <div class="portfolio-item regular">
+                <img src="images/portfolio-4.jpg" alt="Sangeet or reception look" />
+                <div class="portfolio-overlay">
+                    <span class="portfolio-label">Sangeet Look</span>
+                </div>
+            </div>
+
+            <!--
+        WANT MORE PORTFOLIO IMAGES?
+        Copy the block below and add more .portfolio-item.regular divs.
+        The grid will wrap automatically.
+        Increment the image filename: portfolio-5.jpg, portfolio-6.jpg, etc.
+      -->
+
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════════ -->
+    <section class="about-section" id="about">
+
+        <div class="about-left">
+            <p class="eyebrow">The artist</p>
+            <h2 class="section-title">About <em>Me</em></h2>
+
+            <!--
+        ABOUT COPY:
+        Replace the placeholder paragraphs below with your friend's actual bio.
+        Keep it personal, warm, and around 3–4 sentences per paragraph.
+      -->
+            <p class="about-body">
+                [Your friend's story goes here — her journey into makeup, what sparked her passion,
+                and how she got to where she is today. Something personal and honest always resonates
+                best with potential clients.]
+            </p>
+            <p class="about-body">
+                [A second paragraph about her aesthetic philosophy — the kinds of looks she loves
+                creating, her approach to different skin tones, and what makes a session with her
+                feel different from anyone else.]
+            </p>
+
+            <!-- CERTIFICATIONS — add once education details arrive -->
+            <div class="certifications">
+                <p class="cert-eyebrow">Education &amp; Certifications</p>
+                <ul class="cert-list">
+                    <!--
+            Add certifications here once you have the details.
+            Each item follows this format:
+
+            <li>Diploma in Professional Makeup — VLCC Institute, 2017</li>
+            <li>Advanced Bridal Makeup — Shahnaz Husain Academy, 2018</li>
+            <li>Skin &amp; Hair Care Certification — CIDESCO International</li>
+
+            Uncomment and replace the placeholder below:
+          -->
+                    <li style="color: var(--taupe); font-style: italic;">Certifications coming soon…</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about-right">
+            <p class="about-quote">
+                "Every face tells a story — my job is simply to help it
+                shine a little brighter."
+            </p>
+            <!--
+        Update the quote above with something your friend actually says or believes.
+        A genuine quote always works better than a generic one.
+      -->
+            <p class="about-quote-attr">— Your Friend's Name, Makeup Artist</p>
+
+            <!--
+        ABOUT PORTRAIT IMAGE:
+        Best: a natural, warm headshot or behind-the-scenes photo of her working.
+        Dimensions: portrait orientation — at least 600×800px.
+        Replace src below with your image path.
+      -->
+            <div class="about-portrait">
+                <img src="images/portrait.jpg" alt="Aanya — Makeup Artist" />
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════════════════ -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <p class="eyebrow">Client love</p>
+            <h2 class="section-title">What they <em>say</em></h2>
+        </div>
+
+        <div class="testi-grid">
+
+            <!--
+        TESTIMONIALS:
+        Replace with real client reviews — ideally pulled from Google, Instagram,
+        or WhatsApp messages. Real names (with permission) or first names only.
+      -->
+
+            <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                    "She made me feel like the most beautiful version of myself on my wedding day.
+                    Every single guest complimented my look — I couldn't stop crying happy tears."
+                </p>
+                <p class="testi-author">Priya Sharma · Bride, 2024</p>
+            </div>
+
+            <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                    "The best makeup artist I've ever worked with. She understood my vibe immediately
+                    and delivered something even better than I'd imagined."
+                </p>
+                <p class="testi-author">Neha Kapoor · Client</p>
+            </div>
+
+            <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p class="testi-text">
+                    "So professional, so warm, and incredibly talented. The hair styling was stunning —
+                    held perfectly all night through all the dancing."
+                </p>
+                <p class="testi-author">Riya Mehta · Client</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+       CONTACT / BOOKING
+  ══════════════════════════════════════════════ -->
+    <section class="contact-section" id="contact">
+
+        <div class="contact-left">
+            <p class="eyebrow">Get in touch</p>
+            <h2 class="section-title">Book a <em>Session</em></h2>
+
+            <div class="contact-info">
+                <!--
+          Update all contact details below with your friend's real information.
+        -->
+                <div>
+                    <p class="contact-row-label">Location</p>
+                    <p class="contact-row-value">Sohna, Haryana</p>
+                </div>
+                <div>
+                    <p class="contact-row-label">Instagram</p>
+                    <p class="contact-row-value">@aanyastudio</p>
+                </div>
+                <div>
+                    <p class="contact-row-label">WhatsApp / Phone</p>
+                    <p class="contact-row-value">+91 XXXXX XXXXX</p>
+                </div>
+                <div>
+                    <p class="contact-row-label">Availability</p>
+                    <p class="contact-row-value">Monday – Sunday · By appointment</p>
+                </div>
+                <div>
+                    <p class="contact-row-label">Email</p>
+                    <p class="contact-row-value">hello@aanyastudio.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <p class="eyebrow" style="margin-bottom:2rem;">Enquiry form</p>
+
+            <!--
+        NOTE ON THE FORM:
+        This is a static HTML form. To make it actually send emails, you'll need
+        one of the following:
+          a) Formspree (free): Replace action="#" with your Formspree endpoint URL
+             e.g. action="https://formspree.io/f/yourcode"
+          b) Netlify Forms: Add netlify attribute if hosting on Netlify
+          c) WhatsApp redirect: use a JS handler to build a wa.me link
+
+        For now it is left static so you can preview and style it.
+      -->
+            <form action="#" method="POST">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Ananya Singh" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone / WhatsApp</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91 98XXX XXXXX" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" />
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Required</label>
+                    <select id="service" name="service">
+                        <option value="">Select a service…</option>
+                        <option value="bridal">Bridal Makeup</option>
+                        <option value="party">Party &amp; Event Makeup</option>
+                        <option value="hair">Hair Styling</option>
+                        <option value="skincare">Skincare &amp; Facials</option>
+                        <option value="package">Full Package (Makeup + Hair)</option>
+                        <option value="other">Other / Not Sure</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Event Date</label>
+                    <input type="date" id="date" name="date" />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tell me about your event</label>
+                    <textarea id="message" name="message"
+                        placeholder="Venue, number of people, any references or inspiration…"></textarea>
+                </div>
+
+                <button type="submit" class="form-submit">Send Enquiry</button>
+
+            </form>
+        </div>
+
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+    <footer>
+        <div class="footer-logo">Aanya Studio</div>
+        <p class="footer-note">© 2025 Aanya Studio · All rights reserved</p>
+        <div class="footer-socials">
+            <!--
+        Update the href values below with real social media URLs.
+      -->
+            <a href="https://instagram.com/aanyastudio" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
